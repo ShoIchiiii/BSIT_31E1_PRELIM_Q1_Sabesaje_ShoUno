@@ -36,7 +36,7 @@ var plane = TransportResolver.Resolve("plane");
 
 Assert(plane is Airplane, "Resolver creates Airplane.");
 Assert(plane is Vehicle, "Airplane inherits Vehicle.");
-Assert(plane is IFlyable, "Airplane implements IFlyable.");
+Assert(plane is Interfaces, "Airplane implements IFlyable.");
 Assert(plane!.Move() == "Flying in the sky.", "Airplane can move.");
 
 // ---------- BOAT ----------
@@ -79,6 +79,6 @@ Console.WriteLine($"Passed: {passed}/{total}");
 //---------- EXTRA CHALLENGE --------
 var helicopter = TransportResolver.Resolve("helicopter");
 
-Assert(helicopter is IFlyable, "");
+Assert(helicopter is Interfaces, "");
 Assert(helicopter is IDriveable, "");
 Assert(helicopter!.Move() == "Flying in the sky.", "");

@@ -1,8 +1,8 @@
-namespace TransportChallenge;
+﻿namespace TransportChallenge;
 
-public class Airplane : Vehicle, Interfaces
+public class Drone : Vehicle, Interfaces
 {
-    public Airplane() : base("Airplane") { }
+    public Drone() : base("Drone") { }
 
     public override string Move() => "Flying in the sky.";
 
